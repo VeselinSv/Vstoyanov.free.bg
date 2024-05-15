@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "Geist";
+    src: url("https://pham.codes/d/GeistMonoVF.woff2") format("woff2");
+  }
+  
+  p {
+    font-family: "Geist";
+    font-size: 128px;
+    margin: 0;
+  
+    background-color: white;
+    background-image: linear-gradient(0deg, white 60%, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+  
+    --wght-min: 32;
+    --wght-max: 240;
+  }
+  
+  p > span {
+    animation: breath 1.5s alternate ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+  }
+  .box{
+    width:340px;
+    height:200px;
+    background: #121212;
+    color:ghostwhite;
+    text-transform:uppercase;
+    font:bold  sans-serif;
+    filter:blur(100px);
+    transition:all .5s linear;
+    border-radius:1rem;
+    text-shadow:8px 8px 10px rgb(0,0,0,.5);
+  }
+  .box:hover{
+    filter:blur(0px);
+    box-shadow:10px 10px 25px rgb(255,255,255,.3);
+  }
+  .box:active{
+    filter:blur(0px);
+    box-shadow:0px 0px 0px transparent;
+    border-radius:0px;
+    text-shadow:8px 8px 0px rgb(0,0,0,.7);
+  }
+  .cen{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .decoration
+  {
+    text-decoration: none;
+  }
+  
+  @keyframes breath {
+    0% {
+      font-variation-settings: "wght" var(--wght-min);
+    }
+    100% {
+      font-variation-settings: "wght" var(--wght-max);
+    }
+  }
+  
+  /* Setup */
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    background: #111;
+    color: white;
+  }
+  
+  
+
+  
+  
